@@ -12,8 +12,6 @@ public class CategoryPage extends BasePage {
         super(driver);
     }
 
-    //public static WebDriver driver;
-
     public void selectCategory() throws InterruptedException {
 
 
@@ -33,24 +31,6 @@ public class CategoryPage extends BasePage {
         clickBy(firstProduct);
         Thread.sleep(2000);
 
-/*
-        String categoryText = "Spor & Outdoor";
-        By categoryName = By.cssSelector("li.catMenuItem>a[title='" + categoryText + "']");
-        Thread.sleep(2000);
-        hoverElement(categoryName);
-        Thread.sleep(2000);
-
-        String subMenuText = "Outdoor & Kamp";
-        //driver.findElement(By.cssSelector("li.subCatMenuItem>a[title='" + subMenuText + "']")).click();
-        By subCategoryName = By.cssSelector("li.subCatMenuItem>a[title='" + subMenuText + "']");
-        clickBy(subCategoryName);
-
-        By firstProduct=By.xpath("(//*[@title=\'Ege 2 Adet Çantalı Kamp Sandalyesi Balıkçı Plaj Piknik Koltuğu\'])[1]");
-        Thread.sleep(2000);
-        clickBy(firstProduct);
-        Thread.sleep(2000);
-
-*/
     }
 
 }
